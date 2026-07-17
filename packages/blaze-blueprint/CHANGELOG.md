@@ -1,11 +1,17 @@
 # @blaze-cardano/blueprint
 
+## 0.9.0
+
+### Minor Changes
+
+- 56e9f7c: Export the `BlueprintArgs` interface and document Blueprint generation and typed validator workflows.
+- e3cb028: Add transaction-construction safety features: a `TypedScript` wrapper that binds datum and redeemer types to a script, typed `addInput` and a `lockScriptAssets` helper, explicit `mintAssets`/`burnAssets` with positive-quantity enforcement, and a `TxBuilderReuseError` when a completed builder is completed again. Blueprint codegen now generates validators as `TypedScript` subclasses with branded datum/redeemer types and `datum()`/`redeemer()` serializers.
+
 ## 0.8.2
 
 ### Patch Changes
 
 - d0f40de: Fix blueprint code generation:
-
   - Fix generic type naming by extracting type parameters from schema metadata (handles module names with underscores like `library_b`)
   - Fix generic type naming for nested module paths (e.g., `SignedPayload<ProtocolRedeemer>` → `SignedPayload_ProtocolRedeemer`)
   - Use `Type.Number()` for map integer keys since JS objects can't have BigInt keys

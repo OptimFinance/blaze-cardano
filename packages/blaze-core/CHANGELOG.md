@@ -1,5 +1,11 @@
 # @blaze-cardano/core
 
+## 0.9.0
+
+### Minor Changes
+
+- ed30731: Add Catalyst M1 SDK and emulator work: governance transaction APIs, provider routing, Maestro exports, emulator RPC/benchmarks, and governance script witness handling.
+
 ## 0.8.0
 
 ### Minor Changes

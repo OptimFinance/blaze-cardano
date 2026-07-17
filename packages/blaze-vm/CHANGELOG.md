@@ -1,5 +1,13 @@
 # @blaze-cardano/vm
 
+## 0.2.4
+
+### Patch Changes
+
+- Updated dependencies [ed30731]
+  - @blaze-cardano/core@0.9.0
+  - @blaze-cardano/uplc@0.4.4
+
 ## 0.2.3
 
 ### Patch Changes

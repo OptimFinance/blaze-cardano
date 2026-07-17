@@ -1,7 +1,7 @@
 {
   "name": "script-deploy-aiken",
   "description": "Compile an Aiken validator and deploy it as a reference script with Blaze",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "dependencies": {
     "@blaze-cardano/core": "workspace:*",
     "@blaze-cardano/deploy": "workspace:*",
